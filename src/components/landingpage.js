@@ -20,15 +20,27 @@ class LandingPage extends Component {
               <p> HTML | CSS |Java | PHP | C | C++ | SQL | JavaScript </p>
               <div className="landing-links">
                 {/*linkdin */}
-                <a href="/" rel="noopener-noreferrer" target="_blank">
+                <a
+                  href="https://www.linkedin.com/in/moti-buchel-271347177/"
+                  rel="noopener-noreferrer"
+                  target="_blank"
+                >
                   <i className="fa fa-linkedin-square" aria-hidden="true" />
                 </a>
                 {/*github */}
-                <a href="/" rel="noopener-noreferrer" target="_blank">
+                <a
+                  href="https://github.com/motibocl"
+                  rel="noopener-noreferrer"
+                  target="_blank"
+                >
                   <i className="fa fa-github-square" aria-hidden="true" />
                 </a>
                 {/*facebook */}
-                <a href="/" rel="noopener-noreferrer" target="_blank">
+                <a
+                  href="https://www.facebook.com/moti.buchel"
+                  rel="noopener-noreferrer"
+                  target="_blank"
+                >
                   <i className="fa fa-facebook-square" aria-hidden="true" />
                 </a>
               </div>

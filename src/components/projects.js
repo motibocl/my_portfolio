@@ -37,9 +37,13 @@ class Projects extends Component {
             </CardTitle>
             <CardText>This is my website.</CardText>
             <CardActions border>
-              <Button colored>Github</Button>
-              <Button colored>Presentation</Button>
-              <Button colored>Note</Button>
+              <Button colored>
+                <a
+                  href="https://github.com/motibocl/my_portfolio"
+                  target="blank"
+                />
+                Github
+              </Button>
             </CardActions>
             <CardMenu style={{ color: "#fff" }}>
               <IconButton name="share" />
@@ -66,7 +70,6 @@ class Projects extends Component {
               programmed in IntelliJ.
             </CardText>
             <CardActions border>
-              <Button colored>Github</Button>
               <Button colored>
                 {" "}
                 <a
@@ -111,7 +114,6 @@ class Projects extends Component {
           </div>
         </div>
       );
-    } else if (this.state.activeTab === 3) {
     }
   }
 
@@ -127,7 +129,6 @@ class Projects extends Component {
             <Tab>React</Tab>
             <Tab>JAVA</Tab>
             <Tab>PHP</Tab>
-            <Tab>SQL</Tab>
           </Tabs>
         </div>
         <section>
