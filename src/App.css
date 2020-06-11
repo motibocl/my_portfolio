@@ -1,38 +1,284 @@
-.App {
+html {
+  scroll-behavior: smooth;
+}
+.navBar {
+  background: #0b486b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #f56217,
+    #0b486b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #f56217,
+    #0b486b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.landing-grid {
+  background: #0b486b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #f56217,
+    #0b486b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #f56217,
+    #0b486b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.avatar-img {
+  height: 250px;
+  padding-top: 5em;
+}
+.landing-content {
+  color: white;
+  background-color: black;
+  opacity: 0.8;
+  margin: auto;
+  border-radius: 10px;
+  width: 80%;
+}
+.landing-content h1 {
+  font-weight: bold;
+}
+
+.landing-content hr {
+  border-top: dotted;
+  width: 80%;
+  margin: auto;
+}
+.landing-content p {
+  font-size: 20px;
+  padding: 1em;
+}
+.landing-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+.landing-links i {
+  color: white;
+  font-size: 5em;
+  padding: 8px;
+}
+.Contact-grid {
+  background-color: #404040;
+  text-align: center;
+  top: 0;
+  left: 0;
+  height: 40vh;
+}
+.Contact-grid h1 {
+  padding-top: 20px;
+  color: #fff;
+}
+.Contact-grid img {
+  padding-top: 0;
+}
+.Contact-grid h2 {
+  font-size: 2em;
+
+  margin: auto;
+  color: #fff;
+}
+.Contact-grid i {
+  font-size: 4em;
+  color: #473be7;
+}
+.grid-tabs {
+  display: flex;
+
+  justify-content: space-around;
+}
+.about-grid {
+  margin: auto;
+  display: fixed;
+  /* width: 80%;*/
+  height: 100vh;
+}
+.about-grid h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+  position: relative;
+
+  color: black;
+}
+.about-content h2 {
+  position: relative;
+  color: #ffffff;
+  line-height: 0.9;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about-content h4 {
+  position: relative;
+  color: #ffffff;
+  line-height: 0.9;
+  text-align: center;
+  font-family: Oswald;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pdf-grid iframe {
+  min-height: 100%;
+  padding-bottom: 0 px;
 }
+.section_intro {
+  height: 100vh;
+}
+.about-grid::before {
+  content: "";
+  background: url("./components/images/depositphotos_94947116-stock-illustration-seamless-pattern-on-the-theme.jpg")
+    fixed;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.3;
+}
+.about-grid {
+  position: relative;
+  height: 500px;
+  width: 100%;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.section_about {
+  height: 100vh;
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+/*-----------------queries------------------------------*/
+/*-------landing-page-----------------------------------*/
+@media only screen and (max-width: 769px) {
+  .landing-content h1 {
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .landing-content p {
+    font-size: 15px;
+    padding: 1em;
+  }
+  .landing-links i {
+    color: white;
+    font-size: 3em;
+    padding: 5px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*-----------resume----------------*/
+@media only screen and (max-width: 1024px) {
+  .pdf-grid iframe {
+    padding-top: 60px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+/*-----------contact-me----------------*/
+@media only screen and (max-width: 1024px) {
+  .Contact-grid h3 {
+    margin: auto;
+    font-size: 25px;
   }
+  .Contact-grid i {
+    font-size: 60px;
+  }
+  .Contact-grid h2 {
+    margin: auto;
+  }
+}
+/*----down_arrow*/
+.downArrow {
+  margin: auto;
+  padding-top: 20px;
+}
+.bounce {
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
+}
+@-moz-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+/* Demo Purpose Only*/
+.demo {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  padding: 15px 0;
+  text-align: center;
+}
+.demo a {
+  font-family: "Raleway", sans-serif;
+  color: #2ecc71;
 }
