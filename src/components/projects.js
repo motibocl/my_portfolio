@@ -41,8 +41,11 @@ class Projects extends Component {
                 <a
                   href="https://github.com/motibocl/my_portfolio"
                   target="blank"
-                />
-                Github
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none" }}
+                >
+                  Github
+                </a>
               </Button>
             </CardActions>
             <CardMenu style={{ color: "#fff" }}>
@@ -57,10 +60,10 @@ class Projects extends Component {
           <Card shadow={0} style={{ width: "350px", margin: "auto" }}>
             <CardTitle
               style={{
-                color: "black",
+                color: "white",
                 height: "100px",
                 background:
-                  "url(https://www.itprotoday.com/sites/itprotoday.com/files/styles/article_featured_retina/public/java-logo.png?itok=zBtyY02v) center / cover",
+                  "url(https://stackify.com/wp-content/uploads/2018/09/Java-Debugging-Tips-1280x720.jpg) center / cover",
               }}
             >
               TimeUp-Final Project
@@ -75,6 +78,8 @@ class Projects extends Component {
                 <a
                   href="https://1drv.ms/p/s!AtEFsysrYXemgYAuw8kI3QD__dJxVA"
                   target="blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none" }}
                 >
                   Presentation
                 </a>
@@ -93,19 +98,28 @@ class Projects extends Component {
             <Card shadow={0} style={{ width: "350px", margin: "auto" }}>
               <CardTitle
                 style={{
-                  color: "black",
+                  color: "white",
                   height: "100px",
                   background:
-                    "url(https://www.1-more-thing.com/wp-content/uploads/2017/05/logo_php-300x225.png) center / cover",
+                    "url(https://www.mvps.net/docs/wp-content/uploads/2019/04/php.png) center / cover",
                 }}
               >
-                Project #1
+                shop
               </CardTitle>
-              <CardText>Online shop from scratch.</CardText>
+              <CardText>
+                Online shop from scratch using MySql for data.
+              </CardText>
               <CardActions border>
-                <Button colored>Github</Button>
-                <Button colored>Presentation</Button>
-                <Button colored>Note</Button>
+                <Button colored>
+                  <a
+                    target="blank"
+                    rel="noopener noreferrer"
+                    href="http://cs.aac.ac.il/~motibocl/exe5/"
+                    style={{ textDecoration: "none" }}
+                  >
+                    visit
+                  </a>
+                </Button>
               </CardActions>
               <CardMenu style={{ color: "#fff" }}>
                 <IconButton name="share" />

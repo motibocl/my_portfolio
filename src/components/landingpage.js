@@ -22,7 +22,7 @@ class LandingPage extends Component {
                 {/*linkdin */}
                 <a
                   href="https://www.linkedin.com/in/moti-buchel-271347177/"
-                  rel="noopener-noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   <i className="fa fa-linkedin-square" aria-hidden="true" />
@@ -30,15 +30,15 @@ class LandingPage extends Component {
                 {/*github */}
                 <a
                   href="https://github.com/motibocl"
-                  rel="noopener-noreferrer"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <i className="fa fa-github-square" aria-hidden="true" />
                 </a>
                 {/*facebook */}
                 <a
                   href="https://www.facebook.com/moti.buchel"
-                  rel="noopener-noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   <i className="fa fa-facebook-square" aria-hidden="true" />
